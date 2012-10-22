@@ -1,7 +1,27 @@
 UpApp::Application.routes.draw do
-  get "static_pages/home"
 
+  get "users/newcoop"
+  get "users/newfunder"
+
+  root to: 'static_pages#home'
+
+  get "static_pages/home"
   get "static_pages/about"
+  get "static_pages/aboutwebsite"
+  get "static_pages/aboutcoops"
+  get "static_pages/help"
+  get "static_pages/projectstartpage"
+
+
+  match '/about',   to: 'static_pages#about'
+  match '/aboutwebsite',   to: 'static_pages#aboutwebsite'
+  match '/aboutcoops',   to: 'static_pages#aboutcoops'
+  match '/help',   to: 'static_pages#help'
+  match '/start', to: 'static_pages#projectstartpage'
+  match '/newcoop',  to: 'users#newcoop'
+  match '/newfunder',  to: 'users#newfunder'
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
