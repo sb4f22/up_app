@@ -1,7 +1,5 @@
 UpApp::Application.routes.draw do
-
-  get "users/newcoop"
-  get "users/newfunder"
+  resources :users
 
   root to: 'static_pages#home'
 
@@ -18,8 +16,7 @@ UpApp::Application.routes.draw do
   match '/aboutcoops',   to: 'static_pages#aboutcoops'
   match '/help',   to: 'static_pages#help'
   match '/start', to: 'static_pages#projectstartpage'
-  match '/newcoop',  to: 'users#newcoop'
-  match '/newfunder',  to: 'users#newfunder'
+  match '/signup',  to: 'users#new'
 
   
 
