@@ -1,17 +1,47 @@
 <header class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <%= link_to "upandup.coop", root_path, id: "logo" %>
-          <h3>community-based funding for cooperatives and collectives</h3>
-          <nav>
-            <ul class="nav pull-right">
-              <li><%= link_to "about", about_path %></li>
-              <li><%= link_to "start a project", start_path %></li>
-              <li><%= link_to "find a project", root_path %></li>
-              <li><%= link_to "sign in", '#' %></li>
-              <li><%= link_to "sign up", signup_path %></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "Up and Away", root_path, id: "logo" %>
+      <h3> community based funding for cooperatives </h3>
+      <nav>
+        <ul class="nav pull-right">
+          <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "about this website", aboutwebsite_path %></li>
+                <li><%= link_to "what are cooperatives?", aboutcoops_path %></li>
+                <li><%= link_to "help!", '#' %></li>
+                <li class="divider"></li>
+                <li>
+                  <%= link_to "Sign out", signout_path, method: "delete" %>
+                </li>
+              </ul>
+            </li>
+          <li><%= link_to "start a project", start_path %></li>
+          <li><%= link_to "find a project", root_path %></li>
+
+          <% if signed_in? %>
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Account <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Profile", current_user %></li>
+                <li><%= link_to "Settings", '#' %></li>
+                <li class="divider"></li>
+                <li>
+                  <%= link_to "Sign out", signout_path, method: "delete" %>
+                </li>
+              </ul>
+            </li>
+          <% else %>
+            <li><%= link_to "Sign in", signin_path %></li>
+            <li><%= link_to "Sign up", signup_path %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
