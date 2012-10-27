@@ -1,0 +1,50 @@
+
+  <%= form_for(@project) do |f| %>
+  		<%= render 'shared/error_messages', object: f.object %>
+
+  		<div class="field">
+
+              <h3> Step 1: Enter Your Basic Information: </h3>
+              <br>
+    
+    		<h4> Name of your Cooperative: </h4>
+    		<%= f.text_field :who %>
+
+    		<h4> Location: </h4>
+   			<%= f.text_field :where %>
+
+   			<h4> Description of your Cooperative and Your Funding Request: </h4>
+   			<%= f.text_area :coopdescription %>
+
+   			<h4> End Date of your Project: </h4>
+   		   <%= f.datepicker :end_date %>
+         <br><br><br><br><br><br><br><br><br><br>
+
+
+			<h4> How much money do you need successful? </h4>
+			<%= f.number_field :howmuch %>
+
+      <h3> Step 2: Multimedia Time </h3>
+      <br>
+      <h4> Add a Picture for your Project (you can add more latter) </h4>
+
+      <div class="newPaperclipFiles">
+
+        <%= f.fields_for :project_assets do |project_asset| %>
+           <% if project_asset.object.new_record? %>
+                 <%= project_asset.file_field :image %>
+           <% end %>
+        <% end %>
+      </div>
+
+      <h4>Add a video for your project by pasting the "embed code" from youtube or vimeo (optional)</h4>
+      <%= f.text_field :video_links %>
+
+     
+
+
+
+			<%= f.submit "Next", class: "btn btn-large btn-primary" %>
+  		</div>
+  	<% end %>
+ 

@@ -11,7 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121024193425) do
+ActiveRecord::Schema.define(:version => 20121027210944) do
+
+  create_table "campaigns", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "category"
+    t.string   "coop_name"
+    t.string   "coop_location"
+    t.string   "short_description"
+    t.string   "long_description"
+    t.string   "video_link"
+    t.boolean  "active",             :default => false
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "campaigns", ["active"], :name => "index_campaigns_on_active"
+  add_index "campaigns", ["category"], :name => "index_campaigns_on_category"
+  add_index "campaigns", ["coop_location"], :name => "index_campaigns_on_coop_location"
+  add_index "campaigns", ["coop_name"], :name => "index_campaigns_on_coop_name"
+  add_index "campaigns", ["user_id", "created_at"], :name => "index_campaigns_on_user_id_and_created_at"
 
   create_table "users", :force => true do |t|
     t.string   "name"

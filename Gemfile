@@ -6,6 +6,8 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'faker', '1.0.1'
+gem 'jquery_datepicker'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'

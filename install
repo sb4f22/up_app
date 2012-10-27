@@ -1,0 +1,912 @@
+Script started on Thu 25 Oct 2012 01:34:38 PM PDT
+]0;sb4f22@sb4f22-HP-Compaq-dc7600-Convertible-Minitower: ~/rails_apps/up_appsb4f22@sb4f22-HP-Compaq-dc7600-Convertible-Minitower:~/rails_apps/up_app$ bundle  install
+Fetching git://github.com/thoughtbot/paperclip.git
+remote: Counting objects: 7386, done.[K
+remote: Compressing objects:   0% (1/3078)   [Kremote: Compressing objects:   1% (31/3078)   [Kremote: Compressing objects:   2% (62/3078)   [Kremote: Compressing objects:   3% (93/3078)   [Kremote: Compressing objects:   4% (124/3078)   [Kremote: Compressing objects:   5% (154/3078)   [Kremote: Compressing objects:   6% (185/3078)   [Kremote: Compressing objects:   7% (216/3078)   [Kremote: Compressing objects:   8% (247/3078)   [Kremote: Compressing objects:   9% (278/3078)   [Kremote: Compressing objects:  10% (308/3078)   [Kremote: Compressing objects:  11% (339/3078)   [Kremote: Compressing objects:  12% (370/3078)   [Kremote: Compressing objects:  13% (401/3078)   [Kremote: Compressing objects:  14% (431/3078)   [Kremote: Compressing objects:  15% (462/3078)   [Kremote: Compressing objects:  16% (493/3078)   [Kremote: Compressing objects:  17% (524/3078)   [Kremote: Compressing objects:  18% (555/3078)   [Kremote: Compressing objects:  19% (585/3078)   [Kremote: Compressing objects:  20% (616/3078)   [Kremote: Compressing objects:  21% (647/3078)   [Kremote: Compressing objects:  22% (678/3078)   [Kremote: Compressing objects:  23% (708/3078)   [Kremote: Compressing objects:  24% (739/3078)   [Kremote: Compressing objects:  25% (770/3078)   [Kremote: Compressing objects:  26% (801/3078)   [Kremote: Compressing objects:  27% (832/3078)   [Kremote: Compressing objects:  28% (862/3078)   [Kremote: Compressing objects:  29% (893/3078)   [Kremote: Compressing objects:  30% (924/3078)   [Kremote: Compressing objects:  31% (955/3078)   [Kremote: Compressing objects:  32% (985/3078)   [Kremote: Compressing objects:  33% (1016/3078)   [Kremote: Compressing objects:  34% (1047/3078)   [Kremote: Compressing objects:  35% (1078/3078)   [Kremote: Compressing objects:  36% (1109/3078)   [Kremote: Compressing objects:  37% (1139/3078)   [Kremote: Compressing objects:  38% (1170/3078)   [Kremote: Compressing objects:  39% (1201/3078)   [Kremote: Compressing objects:  40% (1232/3078)   [Kremote: Compressing objects:  41% (1262/3078)   [Kremote: Compressing objects:  42% (1293/3078)   [Kremote: Compressing objects:  43% (1324/3078)   [Kremote: Compressing objects:  44% (1355/3078)   [Kremote: Compressing objects:  45% (1386/3078)   [Kremote: Compressing objects:  46% (1416/3078)   [Kremote: Compressing objects:  47% (1447/3078)   [Kremote: Compressing objects:  48% (1478/3078)   [Kremote: Compressing objects:  49% (1509/3078)   [Kremote: Compressing objects:  50% (1539/3078)   [Kremote: Compressing objects:  51% (1570/3078)   [Kremote: Compressing objects:  52% (1601/3078)   [Kremote: Compressing objects:  53% (1632/3078)   [Kremote: Compressing objects:  54% (1663/3078)   [Kremote: Compressing objects:  55% (1693/3078)   [Kremote: Compressing objects:  56% (1724/3078)   [Kremote: Compressing objects:  57% (1755/3078)   [Kremote: Compressing objects:  58% (1786/3078)   [Kremote: Compressing objects:  59% (1817/3078)   [Kremote: Compressing objects:  60% (1847/3078)   [Kremote: Compressing objects:  61% (1878/3078)   [Kremote: Compressing objects:  62% (1909/3078)   [Kremote: Compressing objects:  63% (1940/3078)   [Kremote: Compressing objects:  64% (1970/3078)   [Kremote: Compressing objects:  65% (2001/3078)   [Kremote: Compressing objects:  66% (2032/3078)   [Kremote: Compressing objects:  67% (2063/3078)   [Kremote: Compressing objects:  68% (2094/3078)   [Kremote: Compressing objects:  69% (2124/3078)   [Kremote: Compressing objects:  70% (2155/3078)   [Kremote: Compressing objects:  71% (2186/3078)   [Kremote: Compressing objects:  72% (2217/3078)   [Kremote: Compressing objects:  73% (2247/3078)   [Kremote: Compressing objects:  74% (2278/3078)   [Kremote: Compressing objects:  75% (2309/3078)   [Kremote: Compressing objects:  76% (2340/3078)   [Kremote: Compressing objects:  77% (2371/3078)   [Kremote: Compressing objects:  78% (2401/3078)   [Kremote: Compressing objects:  79% (2432/3078)   [Kremote: Compressing objects:  80% (2463/3078)   [Kremote: Compressing objects:  81% (2494/3078)   [Kremote: Compressing objects:  82% (2524/3078)   [Kremote: Compressing objects:  83% (2555/3078)   [Kremote: Compressing objects:  84% (2586/3078)   [Kremote: Compressing objects:  85% (2617/3078)   [Kremote: Compressing objects:  86% (2648/3078)   [Kremote: Compressing objects:  87% (2678/3078)   [Kremote: Compressing objects:  88% (2709/3078)   [Kremote: Compressing objects:  89% (2740/3078)   [Kremote: Compressing objects:  90% (2771/3078)   [Kremote: Compressing objects:  91% (2801/3078)   [Kremote: Compressing objects:  92% (2832/3078)   [Kremote: Compressing objects:  93% (2863/3078)   [Kremote: Compressing objects:  94% (2894/3078)   [Kremote: Compressing objects:  95% (2925/3078)   [Kremote: Compressing objects:  96% (2955/3078)   [Kremote: Compressing objects:  97% (2986/3078)   [Kremote: Compressing objects:  98% (3017/3078)   [Kremote: Compressing objects:  99% (3048/3078)   [Kremote: Compressing objects: 100% (3078/3078)   [Kremote: Compressing objects: 100% (3078/3078), done.[K
+Receiving objects:   0% (1/7386)   Receiving objects:   1% (74/7386)   Receiving objects:   1% (137/7386), 20.00 KiB | 12 KiB/s   Receiving objects:   2% (148/7386), 20.00 KiB | 12 KiB/s   Receiving objects:   2% (177/7386), 36.00 KiB | 13 KiB/s   Receiving objects:   3% (222/7386), 36.00 KiB | 13 KiB/s   Receiving objects:   4% (296/7386), 36.00 KiB | 13 KiB/s   Receiving objects:   4% (334/7386), 68.00 KiB | 15 KiB/s   Receiving objects:   5% (370/7386), 68.00 KiB | 15 KiB/s   Receiving objects:   6% (444/7386), 68.00 KiB | 15 KiB/s   Receiving objects:   7% (518/7386), 68.00 KiB | 15 KiB/s   Receiving objects:   7% (530/7386), 108.00 KiB | 21 KiB/s   Receiving objects:   7% (569/7386), 116.00 KiB | 19 KiB/s   Receiving objects:   8% (591/7386), 116.00 KiB | 19 KiB/s   Receiving objects:   9% (665/7386), 116.00 KiB | 19 KiB/s   Receiving objects:   9% (685/7386), 140.00 KiB | 19 KiB/s   Receiving objects:  10% (739/7386), 140.00 KiB | 19 KiB/s   Receiving objects:  10% (792/7386), 164.00 KiB | 19 KiB/s   Receiving objects:  11% (813/7386), 164.00 KiB | 19 KiB/s   Receiving objects:  12% (887/7386), 164.00 KiB | 19 KiB/s   Receiving objects:  12% (956/7386), 196.00 KiB | 21 KiB/s   Receiving objects:  13% (961/7386), 196.00 KiB | 21 KiB/s   Receiving objects:  14% (1035/7386), 204.00 KiB | 21 KiB/s   Receiving objects:  14% (1041/7386), 204.00 KiB | 21 KiB/s   Receiving objects:  15% (1108/7386), 220.00 KiB | 20 KiB/s   Receiving objects:  15% (1156/7386), 236.00 KiB | 23 KiB/s   Receiving objects:  16% (1182/7386), 236.00 KiB | 23 KiB/s   Receiving objects:  16% (1191/7386), 244.00 KiB | 18 KiB/s   Receiving objects:  17% (1256/7386), 244.00 KiB | 18 KiB/s   Receiving objects:  18% (1330/7386), 244.00 KiB | 18 KiB/s   Receiving objects:  19% (1404/7386), 244.00 KiB | 18 KiB/s   Receiving objects:  20% (1478/7386), 244.00 KiB | 18 KiB/s   Receiving objects:  20% (1493/7386), 284.00 KiB | 22 KiB/s   Receiving objects:  21% (1552/7386), 284.00 KiB | 22 KiB/s   Receiving objects:  21% (1619/7386), 300.00 KiB | 20 KiB/s   Receiving objects:  22% (1625/7386), 300.00 KiB | 20 KiB/s   Receiving objects:  23% (1699/7386), 300.00 KiB | 20 KiB/s   Receiving objects:  24% (1773/7386), 300.00 KiB | 20 KiB/s   Receiving objects:  25% (1847/7386), 300.00 KiB | 20 KiB/s   Receiving objects:  25% (1862/7386), 324.00 KiB | 22 KiB/s   Receiving objects:  26% (1921/7386), 324.00 KiB | 22 KiB/s   Receiving objects:  27% (1995/7386), 324.00 KiB | 22 KiB/s   Receiving objects:  27% (2044/7386), 340.00 KiB | 18 KiB/s   Receiving objects:  28% (2069/7386), 340.00 KiB | 18 KiB/s   Receiving objects:  29% (2142/7386), 340.00 KiB | 18 KiB/s   Receiving objects:  30% (2216/7386), 340.00 KiB | 18 KiB/s   Receiving objects:  31% (2290/7386), 340.00 KiB | 18 KiB/s   Receiving objects:  31% (2317/7386), 364.00 KiB | 20 KiB/s   Receiving objects:  32% (2364/7386), 364.00 KiB | 20 KiB/s   Receiving objects:  32% (2435/7386), 380.00 KiB | 18 KiB/s   Receiving objects:  33% (2438/7386), 380.00 KiB | 18 KiB/s   Receiving objects:  33% (2453/7386), 388.00 KiB | 17 KiB/s   Receiving objects:  34% (2512/7386), 388.00 KiB | 17 KiB/s   Receiving objects:  35% (2586/7386), 404.00 KiB | 17 KiB/s   Receiving objects:  35% (2612/7386), 412.00 KiB | 16 KiB/s   Receiving objects:  36% (2659/7386), 412.00 KiB | 16 KiB/s   Receiving objects:  36% (2713/7386), 436.00 KiB | 15 KiB/s   Receiving objects:  37% (2733/7386), 436.00 KiB | 15 KiB/s   Receiving objects:  38% (2807/7386), 436.00 KiB | 15 KiB/s   Receiving objects:  38% (2865/7386), 452.00 KiB | 15 KiB/s   Receiving objects:  39% (2881/7386), 460.00 KiB | 14 KiB/s   Receiving objects:  39% (2899/7386), 468.00 KiB | 14 KiB/s   Receiving objects:  40% (2955/7386), 468.00 KiB | 14 KiB/s   Receiving objects:  40% (2997/7386), 484.00 KiB | 13 KiB/s   Receiving objects:  41% (3029/7386), 484.00 KiB | 13 KiB/s   Receiving objects:  42% (3103/7386), 484.00 KiB | 13 KiB/s   Receiving objects:  43% (3176/7386), 500.00 KiB | 15 KiB/s   Receiving objects:  43% (3196/7386), 500.00 KiB | 15 KiB/s   Receiving objects:  44% (3250/7386), 516.00 KiB | 16 KiB/s   Receiving objects:  44% (3306/7386), 516.00 KiB | 16 KiB/s   Receiving objects:  45% (3324/7386), 516.00 KiB | 16 KiB/s   Receiving objects:  46% (3398/7386), 532.00 KiB | 16 KiB/s   Receiving objects:  47% (3472/7386), 532.00 KiB | 16 KiB/s   Receiving objects:  47% (3522/7386), 556.00 KiB | 21 KiB/s   Receiving objects:  48% (3546/7386), 556.00 KiB | 21 KiB/s   Receiving objects:  48% (3547/7386), 572.00 KiB | 18 KiB/s   Receiving objects:  48% (3583/7386), 580.00 KiB | 16 KiB/s   Receiving objects:  49% (3620/7386), 580.00 KiB | 16 KiB/s   Receiving objects:  49% (3649/7386), 580.00 KiB | 16 KiB/s   Receiving objects:  49% (3654/7386), 620.00 KiB | 19 KiB/s   Receiving objects:  49% (3654/7386), 636.00 KiB | 19 KiB/s   Receiving objects:  49% (3654/7386), 660.00 KiB | 18 KiB/s   Receiving objects:  50% (3693/7386), 660.00 KiB | 18 KiB/s   Receiving objects:  50% (3748/7386), 684.00 KiB | 18 KiB/s   Receiving objects:  51% (3767/7386), 684.00 KiB | 18 KiB/s   Receiving objects:  52% (3841/7386), 684.00 KiB | 18 KiB/s   Receiving objects:  52% (3870/7386), 700.00 KiB | 17 KiB/s   Receiving objects:  52% (3910/7386), 708.00 KiB | 16 KiB/s   Receiving objects:  53% (3915/7386), 708.00 KiB | 16 KiB/s   Receiving objects:  54% (3989/7386), 708.00 KiB | 16 KiB/s   Receiving objects:  54% (4045/7386), 732.00 KiB | 20 KiB/s   Receiving objects:  55% (4063/7386), 732.00 KiB | 20 KiB/s   Receiving objects:  56% (4137/7386), 748.00 KiB | 18 KiB/s   Receiving objects:  56% (4147/7386), 748.00 KiB | 18 KiB/s   Receiving objects:  57% (4211/7386), 764.00 KiB | 19 KiB/s   Receiving objects:  58% (4284/7386), 764.00 KiB | 19 KiB/s   Receiving objects:  58% (4319/7386), 772.00 KiB | 17 KiB/s   Receiving objects:  59% (4358/7386), 772.00 KiB | 17 KiB/s   Receiving objects:  60% (4432/7386), 772.00 KiB | 17 KiB/s   Receiving objects:  61% (4506/7386), 772.00 KiB | 17 KiB/s   Receiving objects:  62% (4580/7386), 772.00 KiB | 17 KiB/s   Receiving objects:  63% (4654/7386), 772.00 KiB | 17 KiB/s   Receiving objects:  64% (4728/7386), 804.00 KiB | 19 KiB/s   Receiving objects:  65% (4801/7386), 804.00 KiB | 19 KiB/s   Receiving objects:  65% (4871/7386), 820.00 KiB | 19 KiB/s   Receiving objects:  66% (4875/7386), 820.00 KiB | 19 KiB/s   Receiving objects:  67% (4949/7386), 820.00 KiB | 19 KiB/s   Receiving objects:  67% (4989/7386), 836.00 KiB | 20 KiB/s   Receiving objects:  68% (5023/7386), 836.00 KiB | 20 KiB/s   Receiving objects:  69% (5097/7386), 836.00 KiB | 20 KiB/s   Receiving objects:  70% (5171/7386), 844.00 KiB | 19 KiB/s   Receiving objects:  70% (5222/7386), 852.00 KiB | 21 KiB/s   Receiving objects:  71% (5245/7386), 852.00 KiB | 21 KiB/s   Receiving objects:  72% (5318/7386), 852.00 KiB | 21 KiB/s   Receiving objects:  72% (5380/7386), 860.00 KiB | 17 KiB/s   Receiving objects:  73% (5392/7386), 860.00 KiB | 17 KiB/s   Receiving objects:  74% (5466/7386), 860.00 KiB | 17 KiB/s   Receiving objects:  75% (5540/7386), 860.00 KiB | 17 KiB/s   Receiving objects:  75% (5595/7386), 876.00 KiB | 17 KiB/s   Receiving objects:  76% (5614/7386), 876.00 KiB | 17 KiB/s   Receiving objects:  76% (5663/7386), 884.00 KiB | 15 KiB/s   Receiving objects:  77% (5688/7386), 884.00 KiB | 15 KiB/s   Receiving objects:  77% (5746/7386), 884.00 KiB | 15 KiB/s   Receiving objects:  78% (5762/7386), 884.00 KiB | 15 KiB/s   Receiving objects:  79% (5835/7386), 884.00 KiB | 15 KiB/s   Receiving objects:  80% (5909/7386), 900.00 KiB | 17 KiB/s   Receiving objects:  81% (5983/7386), 900.00 KiB | 17 KiB/s   Receiving objects:  82% (6057/7386), 900.00 KiB | 17 KiB/s   Receiving objects:  82% (6120/7386), 916.00 KiB | 13 KiB/s   Receiving objects:  83% (6131/7386), 916.00 KiB | 13 KiB/s   Receiving objects:  84% (6205/7386), 916.00 KiB | 13 KiB/s   Receiving objects:  85% (6279/7386), 916.00 KiB | 13 KiB/s   Receiving objects:  85% (6334/7386), 940.00 KiB | 12 KiB/s   Receiving objects:  86% (6352/7386), 940.00 KiB | 12 KiB/s   Receiving objects:  87% (6426/7386), 940.00 KiB | 12 KiB/s   Receiving objects:  87% (6467/7386), 948.00 KiB | 12 KiB/s   Receiving objects:  88% (6500/7386), 948.00 KiB | 12 KiB/s   Receiving objects:  89% (6574/7386), 948.00 KiB | 12 KiB/s   Receiving objects:  90% (6648/7386), 956.00 KiB | 12 KiB/s   Receiving objects:  90% (6704/7386), 964.00 KiB | 11 KiB/s   Receiving objects:  91% (6722/7386), 964.00 KiB | 11 KiB/s   Receiving objects:  92% (6796/7386), 964.00 KiB | 11 KiB/s   Receiving objects:  93% (6869/7386), 972.00 KiB | 12 KiB/s   Receiving objects:  94% (6943/7386), 972.00 KiB | 12 KiB/s   Receiving objects:  94% (6976/7386), 980.00 KiB | 7 KiB/s   Receiving objects:  95% (7017/7386), 980.00 KiB | 7 KiB/s   Receiving objects:  96% (7091/7386), 988.00 KiB | 7 KiB/s   Receiving objects:  96% (7138/7386), 1004.00 KiB | 7 KiB/s   Receiving objects:  96% (7150/7386), 1012.00 KiB | 6 KiB/s   Receiving objects:  97% (7165/7386), 1012.00 KiB | 6 KiB/s   Receiving objects:  97% (7167/7386), 1020.00 KiB | 5 KiB/s   Receiving objects:  97% (7187/7386), 1.01 MiB | 5 KiB/s   Receiving objects:  97% (7187/7386), 1.03 MiB | 6 KiB/s   Receiving objects:  97% (7187/7386), 1.04 MiB | 6 KiB/s   remote: Total 7386 (delta 5228), reused 6223 (delta 4179)[K
+Receiving objects:  97% (7225/7386), 1.06 MiB | 7 KiB/s   Receiving objects:  98% (7239/7386), 1.06 MiB | 7 KiB/s   Receiving objects:  99% (7313/7386), 1.09 MiB | 14 KiB/s   Receiving objects: 100% (7386/7386), 1.09 MiB | 14 KiB/s   Receiving objects: 100% (7386/7386), 1.10 MiB | 14 KiB/s, done.
+Resolving deltas:   0% (0/5228)   Resolving deltas:   2% (118/5228)   Resolving deltas:   4% (246/5228)   Resolving deltas:   5% (264/5228)   Resolving deltas:   6% (335/5228)   Resolving deltas:   7% (367/5228)   Resolving deltas:   8% (419/5228)   Resolving deltas:   9% (498/5228)   Resolving deltas:  11% (593/5228)   Resolving deltas:  12% (636/5228)   Resolving deltas:  13% (684/5228)   Resolving deltas:  15% (804/5228)   Resolving deltas:  16% (855/5228)   Resolving deltas:  18% (969/5228)   Resolving deltas:  19% (998/5228)   Resolving deltas:  20% (1047/5228)   Resolving deltas:  21% (1102/5228)   Resolving deltas:  22% (1152/5228)   Resolving deltas:  23% (1244/5228)   Resolving deltas:  24% (1256/5228)   Resolving deltas:  25% (1338/5228)   Resolving deltas:  26% (1405/5228)   Resolving deltas:  27% (1413/5228)   Resolving deltas:  29% (1531/5228)   Resolving deltas:  30% (1581/5228)   Resolving deltas:  31% (1639/5228)   Resolving deltas:  33% (1747/5228)   Resolving deltas:  34% (1781/5228)   Resolving deltas:  35% (1831/5228)   Resolving deltas:  37% (1945/5228)   Resolving deltas:  38% (2020/5228)   Resolving deltas:  39% (2043/5228)   Resolving deltas:  40% (2092/5228)   Resolving deltas:  42% (2233/5228)   Resolving deltas:  43% (2249/5228)   Resolving deltas:  44% (2338/5228)   Resolving deltas:  46% (2411/5228)   Resolving deltas:  48% (2540/5228)   Resolving deltas:  49% (2563/5228)   Resolving deltas:  50% (2617/5228)   Resolving deltas:  51% (2697/5228)   Resolving deltas:  52% (2752/5228)   Resolving deltas:  53% (2803/5228)   Resolving deltas:  54% (2860/5228)   Resolving deltas:  55% (2918/5228)   Resolving deltas:  56% (2929/5228)   Resolving deltas:  57% (2982/5228)   Resolving deltas:  58% (3036/5228)   Resolving deltas:  59% (3108/5228)   Resolving deltas:  60% (3143/5228)   Resolving deltas:  61% (3192/5228)   Resolving deltas:  64% (3387/5228)   Resolving deltas:  68% (3583/5228)   Resolving deltas:  69% (3614/5228)   Resolving deltas:  70% (3676/5228)   Resolving deltas:  71% (3713/5228)   Resolving deltas:  72% (3777/5228)   Resolving deltas:  73% (3830/5228)   Resolving deltas:  74% (3895/5228)   Resolving deltas:  75% (3929/5228)   Resolving deltas:  76% (3979/5228)   Resolving deltas:  78% (4104/5228)   Resolving deltas:  80% (4193/5228)   Resolving deltas:  81% (4242/5228)   Resolving deltas:  82% (4296/5228)   Resolving deltas:  84% (4395/5228)   Resolving deltas:  85% (4459/5228)   Resolving deltas:  86% (4507/5228)   Resolving deltas:  87% (4550/5228)   Resolving deltas:  88% (4652/5228)   Resolving deltas:  89% (4653/5228)   Resolving deltas:  90% (4713/5228)   Resolving deltas:  91% (4760/5228)   Resolving deltas:  92% (4840/5228)   Resolving deltas:  93% (4872/5228)   Resolving deltas:  94% (4920/5228)   Resolving deltas:  95% (5000/5228)   Resolving deltas:  96% (5036/5228)   Resolving deltas:  97% (5086/5228)   Resolving deltas:  98% (5127/5228)   Resolving deltas:  99% (5194/5228)   Resolving deltas: 100% (5228/5228)   Resolving deltas: 100% (5228/5228), done.
+Fetching gem metadata from https://rubygems.org/.......
+Fetching gem metadata from https://rubygems.org/..
+Using rake (0.9.2.2) 
+Using i18n (0.6.1) 
+Using multi_json (1.3.6) 
+Using activesupport (3.2.8) 
+Using builder (3.0.4) 
+Using activemodel (3.2.8) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.1) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.1) 
+Using tilt (1.3.3) 
+Using sprockets (2.1.3) 
+Using actionpack (3.2.8) 
+Using mime-types (1.19) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.11) 
+Using mail (2.4.4) 
+Using actionmailer (3.2.8) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.33) 
+Using activerecord (3.2.8) 
+Using activeresource (3.2.8) 
+Using addressable (2.2.8) 
+Using annotate (2.5.0) 
+Using bcrypt-ruby (3.0.1) 
+Using bootstrap-sass (2.0.4.0) 
+Using will_paginate (3.0.3) 
+Using bootstrap-will_paginate (0.0.6) 
+Using bundler (1.2.1) 
+Using nokogiri (1.5.5) 
+Using ffi (1.0.11) 
+Using childprocess (0.3.3) 
+Using libwebsocket (0.1.3) 
+Using rubyzip (0.9.9) 
+Using selenium-webdriver (2.24.0) 
+Using xpath (0.1.4) 
+Using capybara (1.1.2) 
+Using cocaine (0.4.2) 
+Using coffee-script-source (1.3.3) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.2) 
+Using json (1.7.5) 
+Using rdoc (3.12) 
+Using thor (0.16.0) 
+Using railties (3.2.8) 
+Using coffee-rails (3.2.2) 
+Using diff-lcs (1.1.3) 
+Using factory_girl (4.1.0) 
+Using factory_girl_rails (4.1.0) 
+Using faker (1.0.1) 
+Using listen (0.5.3) 
+Using guard (1.4.0) 
+Using guard-rspec (1.2.1) 
+Using jquery-rails (2.0.2) 
+Using jquery_datepicker (0.4) 
+Using libnotify (0.5.9) 
+Using paperclip (3.3.0) from git://github.com/thoughtbot/paperclip.git (at master) 
+Using pg (0.12.2) 
+Using rails (3.2.8) 
+Using rb-inotify (0.8.8) 
+Using rspec-core (2.11.0) 
+Using rspec-expectations (2.11.0) 
+Using rspec-mocks (2.11.0) 
+Using rspec (2.11.0) 
+Using rspec-rails (2.11.0) 
+Using sass (3.2.1) 
+Using sass-rails (3.2.5) 
+Using sqlite3 (1.3.5) 
+Using uglifier (1.2.3) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;sb4f22@sb4f22-HP-Compaq-dc7600-Convertible-Minitower: ~/rails_apps/up_appsb4f22@sb4f22-HP-Compaq-dc7600-Convertible-Minitower:~/rails_apps/up_app$ rails  s
+=> Booting WEBrick
+=> Rails 3.2.8 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2012-10-25 16:34:05] INFO  WEBrick 1.3.1
+[2012-10-25 16:34:05] INFO  ruby 1.9.3 (2012-10-12) [x86_64-linux]
+[2012-10-25 16:34:05] INFO  WEBrick::HTTPServer#start: pid=8256 port=3000
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-25 16:34:34 -0700
+Connecting to database specified by database.yml
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (1.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'GPy2Yf4B_My1IIn2hTYtWQ' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (314.9ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 1383ms (Views: 1301.3ms | ActiveRecord: 79.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:37 -0700
+Served asset /application.css - 304 Not Modified (162ms)
+[2012-10-25 16:34:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:37 -0700
+Served asset /custom.css - 304 Not Modified (34ms)
+[2012-10-25 16:34:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:37 -0700
+Served asset /sessions.css - 304 Not Modified (7ms)
+[2012-10-25 16:34:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:37 -0700
+Served asset /static_pages.css - 304 Not Modified (8ms)
+[2012-10-25 16:34:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:37 -0700
+Served asset /users.css - 304 Not Modified (13ms)
+[2012-10-25 16:34:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:37 -0700
+Served asset /jquery.js - 304 Not Modified (47ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /jquery-ui.js - 304 Not Modified (17ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /sessions.js - 304 Not Modified (4ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /static_pages.js - 304 Not Modified (19ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /users.js - 304 Not Modified (88ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-transition.js - 304 Not Modified (55ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-alert.js - 304 Not Modified (18ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-button.js - 304 Not Modified (12ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (10ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (16ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (17ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-modal.js - 304 Not Modified (17ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (29ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-tab.js - 304 Not Modified (10ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (17ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-popover.js - 304 Not Modified (10ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (10ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /bootstrap.js - 304 Not Modified (53ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:38 -0700
+Served asset /application.js - 304 Not Modified (103ms)
+[2012-10-25 16:34:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cbOnPfXCaz5gJ1q20u3Rmqa6+wV9QR4h5P3Pc53IxLA="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (9.6ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 155ms (Views: 154.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /application.css - 304 Not Modified (53ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /static_pages.css - 304 Not Modified (1ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /custom.css - 304 Not Modified (91ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /sessions.css - 304 Not Modified (1ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /jquery-ui.js - 304 Not Modified (14ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /static_pages.js - 304 Not Modified (16ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /users.js - 304 Not Modified (3ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /bootstrap-transition.js - 304 Not Modified (9ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (7ms)
+[2012-10-25 16:34:42] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:42 -0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap-modal.js - 304 Not Modified (24ms)
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap-tab.js - 304 Not Modified (19ms)
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:43 -0700
+Served asset /bootstrap.js - 304 Not Modified (7ms)
+[2012-10-25 16:34:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-10-25 16:34:45 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_signin_form.html.erb (613.2ms)
+  Rendered sessions/new.html.erb within layouts/application (621.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (7.7ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 761ms (Views: 758.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /application.css - 304 Not Modified (143ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /custom.css - 304 Not Modified (49ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /sessions.js - 304 Not Modified (8ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /users.js - 304 Not Modified (2ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-transition.js - 304 Not Modified (14ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-button.js - 304 Not Modified (7ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (9ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (3ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-modal.js - 304 Not Modified (9ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-tab.js - 304 Not Modified (8ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /bootstrap.js - 304 Not Modified (13ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:46 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+[2012-10-25 16:34:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-10-25 16:34:49 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.2ms)
+  Rendered shared/_signup_form.html.erb (18.1ms)
+  Rendered users/new.html.erb within layouts/application (30.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 191ms (Views: 189.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /application.css - 304 Not Modified (51ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /custom.css - 304 Not Modified (38ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /static_pages.js - 304 Not Modified (15ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /users.js - 304 Not Modified (9ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-button.js - 304 Not Modified (8ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (9ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (7ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (81ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /bootstrap.js - 304 Not Modified (8ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:50 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+[2012-10-25 16:34:50] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-10-25 16:34:58 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_signin_form.html.erb (5.0ms)
+  Rendered sessions/new.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (7.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.4ms)
+[2012-10-25 16:34:58] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /application.css - 304 Not Modified (135ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /custom.css - 304 Not Modified (41ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /jquery-ui.js - 304 Not Modified (19ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-alert.js - 304 Not Modified (7ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-button.js - 304 Not Modified (8ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (8ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (8ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-modal.js - 304 Not Modified (1ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (8ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (2ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /bootstrap.js - 304 Not Modified (10ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-25 16:34:59 -0700
+Served asset /application.js - 304 Not Modified (17ms)
+[2012-10-25 16:34:59] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_signup_form.html.erb (12.0ms)
+  Rendered users/new.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 159ms (Views: 157.4ms | ActiveRecord: 0.5ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /application.css - 304 Not Modified (49ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /sessions.css - 304 Not Modified (1ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /custom.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /users.js - 304 Not Modified (6ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-transition.js - 304 Not Modified (22ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-alert.js - 304 Not Modified (8ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-25 16:35:54 -0700
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+[2012-10-25 16:35:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-25 16:35:54] WARN  Could not de

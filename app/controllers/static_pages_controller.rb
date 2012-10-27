@@ -4,4 +4,8 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def projectstartpage
+  	@project = current_user.projects.build if signed_in?
+  end
 end

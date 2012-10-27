@@ -51,10 +51,10 @@ class UsersController < ApplicationController
 
   private
   
-    def signed_in_user
+  def signed_in_user
       unless signed_in?
         store_location
-        redirect_to signin_url, notice: "Oops! You have to be signed in to do that!"
+        redirect_to signin_url, notice: "Please sign in."
       end
     end
 

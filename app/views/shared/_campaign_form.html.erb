@@ -1,0 +1,33 @@
+<%= form_for @campaign, :url => campaigns_path do |f| %> 
+  <%= render 'shared/error_messages', object: f.object %>
+
+  <div class="field">
+
+    <h3>Chose your Primary Photo: </h3><br>
+      <%= f.file_field :image %>
+
+  	<h3>Your Cooperative's Name: </h3><br>
+    <%= f.text_field :coop_name, placeholder: "Short Description of your campaign..." %>
+
+    <h3>Location (City, State): </h3><br>
+    <%= f.text_field :coop_location, placeholder: "Short Description of your campaign..." %>
+
+  	<h3>Enter your short description below: </h3><br>
+    <%= f.text_field :short_description, placeholder: "Short Description of your campaign..." %>
+
+  	<h3>Enter your long description below: </h3><br>
+    <%= f.text_area :long_description, placeholder: "Long Description of your campaign..." %>
+
+    <h3>Embed code for a Youtube or Vimeo Video (Optional, but recommended!): </h3><br>
+    <%= f.text_field :video_link, placeholder: "Embed Video" %>
+
+    <h3>Choose from one of the categories below: </h3>
+    <%= f.text_field :category, placeholder: "What's the Category of your campaign?" %>
+
+</div>
+
+
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>
+
