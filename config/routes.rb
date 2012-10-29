@@ -2,6 +2,7 @@ UpApp::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :campaigns
+  resources :gifts
 
   root to: 'static_pages#home'
 
@@ -11,7 +12,8 @@ UpApp::Application.routes.draw do
   get "static_pages/aboutcoops"
   get "static_pages/help"
   get "static_pages/startintro"
-  get "campaigns/show"
+  get "static_pages/portal"
+
 
 
   match '/about',   to: 'static_pages#about'
@@ -24,6 +26,11 @@ UpApp::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: :delete
   match '/startintro', to: 'static_pages#startintro'
   match '/campaignpage', to: 'campaigns#show'
+  match '/addgifts', to: 'gifts#new'
+  match '/portal', to: 'static_pages#portal'
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

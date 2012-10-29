@@ -1,0 +1,8 @@
+<div class="span8">
+    <% if @user.gifts.any? %>
+      <h3>Microposts (<%= @user.gifts.count %>)</h3>
+      <ol class="gifts">
+        <%= render @gifts %>
+      </ol>
+      <%= will_paginate @gifts %>
+    <% end %>

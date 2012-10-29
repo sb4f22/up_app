@@ -29,6 +29,11 @@ module SessionsHelper
 		@current_user ||= User.find_by_remember_token(cookies[:remember_token])
 	end
 
+	def user_campaign
+		@current_user ||= User.find_by_remember_token(cookies[:remember_token])
+		@user_campaign = @current_user.campaign.find_by_id(params[:id])
+	end
+
 	def current_user?(user)
   	user == current_user
 	end

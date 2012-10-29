@@ -5,14 +5,13 @@ class CampaignsController < ApplicationController
 
 
   def new
-  @campaign = current_user.campaigns.build if signed_in?
+     @campaign = current_user.campaigns.build if signed_in?
   end
 
   def create
   @campaign = current_user.campaigns.build(params[:campaign])
-   
     if @campaign.save
-      flash[:success] = "Campaign Created! Finalize & Launch Below:"
+      flash[:success] = "Campaign Created! Please enter your gift info below:"
       redirect_to @campaign
     else 
       render 'new'
@@ -21,7 +20,7 @@ class CampaignsController < ApplicationController
 
   def edit
     @campaign = Campaign.find_by_id(params[:id])
-    4.times { @campaign.photo_assets.build }
+
   end
 
   def update
@@ -32,6 +31,8 @@ class CampaignsController < ApplicationController
 
   def show
     @campaign = Campaign.find_by_id(params[:id])
+    @user = @campaign.user
+    @gifts = @user.gifts.paginate(page: params[:page])
   end
 
   def index
