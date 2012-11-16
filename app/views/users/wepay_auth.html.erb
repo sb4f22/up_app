@@ -1,0 +1,41 @@
+Away we Go:
+<br><br>
+Personal Code:
+<%= params[:code] %>
+<br>
+
+<br>
+WePay Access Token:
+<%= @user.wepay_token %>
+<br><br>
+WePay Admin Id:
+<%= @user.wepay_id %>
+<br><br>
+WePay Account Id:
+<%= @user.wepay_account_id %>
+<br><br>
+WePay Account URI:
+<%= @user.wepay_account_uri %>
+<br><br>
+
+      <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+
+      <div><%= f.hidden_field :wepay_id %></div>
+      <div><%= f.hidden_field :wepay_token %></div>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirm Password" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+    <% end %>
+
+  </div>
+</div>
+
+
+
+   

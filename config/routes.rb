@@ -1,8 +1,27 @@
 UpApp::Application.routes.draw do
-  resources :users
+
+  WepayRails.routes(self)
+
+  resources :users do
+    member do
+      get :funding, :funders
+    end
+  end
+
+  resources :users do
+    match 'wepay_connect', :to => 'users#wepay_connect'
+    match 'wepay_info', :to => 'users#wepay_info'
+    match 'wepay_auth', :to => 'users#wepay_auth'
+    match 'create_wepay_account', :to => 'users#create_wepay_account'
+    match 'give', :to => 'users#give'
+  end
+
   resources :sessions, only: [:new, :create, :destroy]
   resources :campaigns
   resources :gifts
+  resources :relationships
+  resources :authentications, only: [:index, :create, :destroy]
+
 
   root to: 'static_pages#home'
 
@@ -12,10 +31,15 @@ UpApp::Application.routes.draw do
   get "static_pages/aboutcoops"
   get "static_pages/help"
   get "static_pages/startintro"
+  get "static_pages/wepaysignup"
   get "static_pages/portal"
+  get "campaigns/support"
+  get "static_pages/wepay"
+  
 
 
 
+  match '/auth/:provider/callback' => 'authentications#create'
   match '/about',   to: 'static_pages#about'
   match '/aboutwebsite',   to: 'static_pages#aboutwebsite'
   match '/aboutcoops',   to: 'static_pages#aboutcoops'
@@ -28,6 +52,11 @@ UpApp::Application.routes.draw do
   match '/campaignpage', to: 'campaigns#show'
   match '/addgifts', to: 'gifts#new'
   match '/portal', to: 'static_pages#portal'
+  match '/wepaysignup', to: 'static_pages#wepaysignup'
+  match '/wepay', to: 'static_pages#wepay'
+  match '/thankyou', :to => 'relationships#thankyou'
+
+ 
 
 
 

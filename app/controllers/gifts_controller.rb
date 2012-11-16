@@ -24,10 +24,8 @@ class GiftsController < ApplicationController
 
   def show
     @gift = Gift.find_by_id(params[:id])
+    @user = @gift.user
   end
-
- 
-
 
   def destroy
   end

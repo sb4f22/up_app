@@ -1,5 +1,11 @@
 <% provide(:title, @user.name) %>
-<h1>
-  <%= gravatar_for @user %>
-  <%= @user.name %>
-</h1>
+<%= gravatar_for @user %>
+<%= @user.name %>
+<br><br>
+
+<%= link_to "click here to get a Wepay Access Token", user_wepay_connect_url(@user, :only_path => false) %><br><br>
+<%= link_to "click here to Connect your Up and Away and Wepay Accounts", user_create_wepay_account_url(@user, :only_path => false) %>
+<br><br>
+<%= link_to "click here to View Wepay Account Info", user_wepay_info_url(@user, :only_path => false) %>
+<br>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/C3m3t_PxiUI" frameborder="0" allowfullscreen></iframe>

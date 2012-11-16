@@ -1,0 +1,23 @@
+
+
+
+
+<%= form_for(current_user.relationships.build(funded_id: @user.id)) do |f| %>
+
+<h3>gifts (<%= @user.gifts.count %>)</h3>
+  				<ol class= "gifts">
+  					<%= render @gifts %>
+  				</ol>
+  				
+
+  <div><%= f.hidden_field :funded_id %></div>
+  <h3>Gift Id:  </h3>
+  <div><%= f.number_field :gift_id %></div>
+  <h3> Amount </h3>
+  <div><%= f.number_field :amount %></div>
+  <h3>Gift description:  </h3>
+  <div><%= f.text_field :description %></div>
+
+
+<%= f.submit "Fund this Campaign", class: "btn btn-large btn-primary" %>
+<% end %>

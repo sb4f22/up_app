@@ -1,0 +1,18 @@
+<% @user ||= current_user %>
+<div class="stats">
+  <a href="<%= funders_user_path(@user) %>">
+    <strong id="funders" class="stat">
+      <%= @user.funders.count %>
+    </strong>
+    funders
+  </a>
+  <a href="<%= funders_user_path(@user) %>">
+    <strong id="funders" class="stat">
+      <%= @user.request %>
+    </strong>
+    Request Amount
+  </a>
+   
+  
+  	
+</div>

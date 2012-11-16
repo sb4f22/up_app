@@ -1,15 +1,32 @@
-<%= image_tag gift.image.url(:medium) %>
-<h3> Gift Name: </h3>
-<h2><%= gift.name %></h2>
 
-<h3> Gift Price: </h3>
-<h2>$<%= gift.price %></h2>
+  <%= image_tag gift.image.url(:thumb) %>  
+  <h3> Gift Name: </h3>
+  <h2><%= gift.name %></h2>
 
-<h3> Gift Description: </h3>
-<h2><%= gift.description %></h2>
+  <h3> Gift Price: </h3>
+  <h2>$<%= gift.price %></h2>
 
-<h3> Amount to Give: </h3>
-<h2><%= gift.count %></h2>
+  <h3> Gift Description: </h3>
+  <h2><%= gift.description %></h2>
+
+  <h3> Amount to Give: </h3>
+  <h2><%= gift.count %></h2>
+
+
+<%= form_for(current_user.relationships.build(funded_id: @user.id, gift_id: gift.id, amount: gift.price, description: gift.description)) do |f| %>
+  
+
+  <div><%= f.hidden_field :funded_id %></div>
+  <div><%= f.hidden_field :gift_id %></div>
+  <div><%= f.hidden_field :amount %></div>
+  <div><%= f.hidden_field :description %></div>
+
+
+<%= f.submit "Claim this Gift", class: "btn btn-large btn-primary" %>
+<% end %>
+
+
+
 
 
  

@@ -1,0 +1,22 @@
+
+WePay Account Id:
+<%= @user.wepay_account_id %>
+<br><br>
+WePay Account URI:
+<%= @user.wepay_account_uri %>
+<br><br>
+
+<%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+
+      <div><%= f.hidden_field :wepay_account_id %></div>
+      <div><%= f.hidden_field :wepay_account_uri %></div>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirm Password" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+    <% end %>

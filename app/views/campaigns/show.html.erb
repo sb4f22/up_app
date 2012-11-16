@@ -1,14 +1,46 @@
+<% provide(:title, @campaign.coop_name) %>
+<br><br>
+
 <div>
-	<section>
-  <%= render @campaign %>
-	</section>
-</div>
-<section>
-	<h2>Current Gifts:</h2>
+    
 
-	<p><%= render @gifts %></p>
 
- 	<h3> Click Here to<%= link_to " Add Gifts", addgifts_path %> </h3>
-</section>
-</div>
+		<%= link_to "Edit Your Campaign", edit_campaign_path(@campaign) %><br>
+
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/C3m3t_PxiUI" frameborder="0" allowfullscreen></iframe>
+
+      	 <section>
+	        <h1><%= @campaign.coop_name %></h1>
+			<h2><%= @campaign.coop_location %></h2>
+			<h2> Funding Request: <%= @campaign.request %> </h2>
+			<%= image_tag @campaign.image.url(:large) %>
+			<h3><%= @campaign.short_description%></h3>
+			<p><%= @campaign.long_description %></p>
+			<p><%= @campaign.category %></p>
+
+         </section>
+
+        <section>
+      		<%= render 'shared/stats' %>
+  		</section>
+
+
+    	<section>	
+
+    		<h3> Click Here to<%= link_to " Add Gifts", addgifts_path %> </h3><br>
+  				
+    	</section>
+
+      </div>
+     		<div>   
+       		<h2> Fund this Campaign: </h2><br>
+  			<div>
+   				<h3>gifts (<%= @user.gifts.count %>)</h3>
+  				<ol>
+  					<%= render @gifts %>
+  				</ol>
+    			</div>
+  		</div>
+
+
 

@@ -8,6 +8,11 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem 'faker', '1.0.1'
 gem 'jquery_datepicker'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'wepay-rails', '2.5.1'
+gem 'omniauth'
+gem 'omniauth-wepay', github: "tenaciousflea/omniauth-wepay"
+gem 'css3-progress-bar-rails'
+
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'

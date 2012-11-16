@@ -19,8 +19,8 @@
                 </li>
               </ul>
             </li>
-          <li><%= link_to "start a project", startintro_path %></li>
-          <li><%= link_to "find a project", root_path %></li>
+          <li><%= link_to "Start a project", startintro_path %></li>
+          <li><%= link_to "Find a project", root_path %></li>
 
           <% if signed_in? %>
             <% if current_user.admin? %>
@@ -40,7 +40,7 @@
               </ul>
             </li>
           <% else %>
-            <li><%= link_to "Sign in", signin_path %></li>
+            <li><%= link_to "Log in", signin_path %></li>
             <li><%= link_to "Sign up", signup_path %></li>
           <% end %>
         </ul>

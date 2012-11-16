@@ -1,0 +1,32 @@
+<li id="<%= gift_item.id %>">
+  <%= image_tag gift.image.url(:thumb) %>
+  <h3> Gift Name: </h3>
+  <h2><%= gift.name %></h2>
+
+  <h3> Gift Price: </h3>
+  <h2>$<%= gift.price %></h2>
+
+  <h3> Gift Description: </h3>
+  <h2><%= gift.description %></h2>
+
+  <h3> Amount to Give: </h3>
+  <h2><%= gift.count %></h2>
+  <% if current_user?(gift_item.user) %>
+    <%= link_to "delete", gift_item, method: :delete,
+                                     data: { confirm: "You sure?" },
+                                     title: gift_item.content %>
+  <% end %>
+</li>
+
+<%= image_tag gift.image.url(:thumb) %>
+<h3> Gift Name: </h3>
+<h2><%= gift.name %></h2>
+
+<h3> Gift Price: </h3>
+<h2>$<%= gift.price %></h2>
+
+<h3> Gift Description: </h3>
+<h2><%= gift.description %></h2>
+
+<h3> Amount to Give: </h3>
+<h2><%= gift.count %></h2>

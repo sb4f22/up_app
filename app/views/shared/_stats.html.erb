@@ -1,0 +1,30 @@
+
+<% @user ||= current_user %>
+<% @relationships = @user.relationships %>
+<% @total_given = @relationships.sum(:amount) %>
+<% @needed_for_goal = @campaign.request - @total_given %>
+<% @fundining_percentage = (@total_given/@campaign.request)*100 %>
+
+
+
+<div class="stats">
+  <a href="<%= funding_user_path(@user) %>">
+    <strong id="funding" class="stat">
+    
+    </strong>
+
+    Total Given: <%= @total_given %> <br>
+    Percentage Given: <%= @fundining_percentage %>% <br> 
+  <%= progress_bar(@fundining_percentage, :color => 'blue', :rounded => true) %>  <br>
+   Time Left: 
+  </a>
+  <a href="<%= funders_user_path(@user) %>">
+    <strong id="funders" class="stat">
+      <%= @user.funders.count %>
+    </strong>
+    funders
+  </a>
+</div>
+
+
+ 

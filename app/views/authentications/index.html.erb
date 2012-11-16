@@ -1,0 +1,23 @@
+<% provide(:title, 'Sign up with We pay') %>
+<h1> Step 2: Fill in Account info for WePay Below: </h1>
+
+<% if @authentications %>
+  <% unless @authentications.empty? %>
+    <p><strong>You can sign in to this account using:</strong></p>
+    <div class="authentications">
+      <% for authentication in @authentications %>
+        <div class="authentication">
+          <div class="provider"><%= authentication.provider.titleize %></div>
+          <div class="uid"><%= authentication.uid %></div>
+          <%= link_to "X", authentication, :confirm => 'Are you sure you want to remove this authentication option?', :method => :delete, :class => "remove" %>
+        </div>
+      <% end %>
+      <div class="clear"></div>
+    </div>
+  <% end %>
+<% end %>
+  
+
+    <section>
+      <%= link_to "click here to get started", 'https://stage.wepay.com/v2/oauth2/token' %>
+    </section>

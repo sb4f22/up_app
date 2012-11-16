@@ -1,6 +1,8 @@
 <h1><%= campaign.coop_name %></h1>
 <h2><%= campaign.coop_location %></h2>
+<h2> Funding Request: <%= campaign.request %> </h2>
 <%= image_tag campaign.image.url(:large) %>
 <h3><%= campaign.short_description%></h3>
 <p><%= campaign.long_description %></p>
 <p><%= campaign.category %></p>
+<%= link_to "Give to this campaign", user_give_url(@user, :only_path => false) %>

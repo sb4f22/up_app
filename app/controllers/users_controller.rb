@@ -22,6 +22,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @campaigns = @user.campaigns
+    @gifts = @user.gifts
+    @relationships = @user.relationships
   end
 
   def edit
@@ -49,7 +52,61 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def funding?(other_user)
+    relationships.find_by_funded_id(other_user.id)
+  end
+
+  def fund!(other_user)
+    relationships.create!(funded_id: other_user.id)
+  end
+
+  def wepay_connect
+    @user = current_user
+    wepay_gateway = WepayRails::Payments::Gateway.new
+    redirect_to wepay_gateway.auth_code_url(user_wepay_auth_url(@user, :only_path => false) )
+end
+
+ def wepay_auth
+    @user = current_user
+  if params[:code].present?
+    wepay_gateway = WepayRails::Payments::Gateway.new
+    access_token = wepay_gateway.get_access_token(params[:code], user_wepay_auth_url(@user, :only_path => false) )
+    @user.update_attributes(:wepay_token => access_token, :wepay_id => wepay_gateway.account_id) 
+      if @user.save
+        flash[:success] = "You Got Your Access Token, Now Create Your Account "
+      end
+  else
+    flash[:notice] = "Your WePay account was not connected."
+    redirect_to root_path
+  end
+end
+
+def create_wepay_account
+    @user = current_user
+    wepay_gateway = WepayRails::Payments::Gateway.new(@user.wepay_token)
+    response = wepay_gateway.create_account({
+      :name => "#{@user.name} on Up and Away",
+      :description => "This account will collect money on behalf of this user's Up and Away Campaign.",
+    })
+    @user.wepay_account_id = response[:account_id]
+    @user.wepay_account_uri = response[:account_uri]
+    @user.save
+  end
+
+  def wepay_info
+    @user = current_user
+  end
+
+
+  def give
+     @user = User.find(params[:id])
+  end
+
+
+
   private
+
+
   
   def signed_in_user
       unless signed_in?
@@ -66,6 +123,8 @@ class UsersController < ApplicationController
     def admin_user
       redirect_to(root_path) unless current_user.admin?
     end
+
+
 end
 
 

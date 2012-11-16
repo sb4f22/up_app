@@ -1,0 +1,17 @@
+ <a href= "https://stage.wepay.com/v2/oauth2/authorize?client_id=169621&scope=refund_payments,collect_payments,view_balance,view_user&redirect_uri=http://localhost:3000/wepay">First up </a>
+
+
+  If you meet these requirements <%= link_to "click here to get started", user_wepay_connect_url(@user, :only_path => false) %>
+  If you meet these requirements <%= link_to "click here to get started", user_wepay_auth_url(@user, :only_path => false) %>
+
+  <%= link_to "Next", user_wepay_auth_url(@user, :only_path => false) %>
+<%= link_to "or Next", user_create_wepay_account_url(@user, :only_path => false) %>
+
+<a href="https://stage.wepayapi.com/v2/oauth2/token?
+client_id=169621
+&redirect_uri=http://localhost:3000/wepay
+&client_secret=c68f718810
+&code=<%= params[:code] %>">Or Try this One</a>
+
+
+
