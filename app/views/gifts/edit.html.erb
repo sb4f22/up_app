@@ -1,0 +1,22 @@
+<h1> Fill in gift info below: </h1>
+
+<li><%= link_to "Back to campaign", current_user %></li>
+
+	<section>
+   <%= form_for @gift, :url => @gift_path, :html => { :multipart => true } do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <h3> Gift Name: </h3>
+    <%= f.text_field :name %>
+     <h3> Gift Price: </h3>
+    <%= f.number_field :price %>
+     <h3> Gift Description: </h3>
+    <%= f.text_area :description %>
+     <h3> How Many of these do you have to give?: </h3>
+    <%= f.number_field :count %>
+    <h3> Upload an Image: </h3>
+    <%= f.file_field :image %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>
+      </section>

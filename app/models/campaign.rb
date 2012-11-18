@@ -2,6 +2,8 @@ class Campaign < ActiveRecord::Base
   attr_accessible :coop_name, :coop_location, :short_description, 
   :long_description, :video_link, :category, :request, :image
   belongs_to :user
+
+  has_many :previews
   
   has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>", :large => "600x600>" }
   

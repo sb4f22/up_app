@@ -7,7 +7,7 @@
 
 
 
-<div class="stats">
+<div class="">
   <a href="<%= funding_user_path(@user) %>">
     <strong id="funding" class="stat">
     
@@ -16,7 +16,7 @@
     Total Given: <%= @total_given %> <br>
     Percentage Given: <%= @fundining_percentage %>% <br> 
   <%= progress_bar(@fundining_percentage, :color => 'blue', :rounded => true) %>  <br>
-   Time Left: 
+   Time Left: <br>
   </a>
   <a href="<%= funders_user_path(@user) %>">
     <strong id="funders" class="stat">

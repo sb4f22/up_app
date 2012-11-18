@@ -7,13 +7,20 @@
 
 		<%= link_to "Edit Your Campaign", edit_campaign_path(@campaign) %><br>
 
-		<iframe width="560" height="315" src="http://www.youtube.com/embed/C3m3t_PxiUI" frameborder="0" allowfullscreen></iframe>
+		<%= link_to "The Preview of This Campaign", preview_path(@campaign) %><br>
+
 
       	 <section>
 	        <h1><%= @campaign.coop_name %></h1>
 			<h2><%= @campaign.coop_location %></h2>
-			<h2> Funding Request: <%= @campaign.request %> </h2>
+
+			<% if @campaign.video_link.present? %>
+			<iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/<%= @campaign.video_link %>" frameborder="0">
+			</iframe>	
+			<% else %>	
 			<%= image_tag @campaign.image.url(:large) %>
+			<% end %>
+			<h2> Funding Request: <%= @campaign.request %> </h2>
 			<h3><%= @campaign.short_description%></h3>
 			<p><%= @campaign.long_description %></p>
 			<p><%= @campaign.category %></p>

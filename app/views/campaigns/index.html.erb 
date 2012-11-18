@@ -1,0 +1,10 @@
+<% provide(:title, 'Campaigns') %>
+<h1>Featured Campaigns</h1>
+
+<%= will_paginate %>
+
+<ul class="campaigns">
+	<%= render @campaigns %>
+</ul>
+
+<%= will_paginate %>

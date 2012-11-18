@@ -12,19 +12,24 @@
   <h3> Amount to Give: </h3>
   <h2><%= gift.count %></h2>
 
+  <% if signed_in? %>
+    <%= form_for(current_user.relationships.build(funded_id: @user.id, gift_id: gift.id, amount: gift.price, description: gift.description)) do |f| %>
+      
 
-<%= form_for(current_user.relationships.build(funded_id: @user.id, gift_id: gift.id, amount: gift.price, description: gift.description)) do |f| %>
-  
-
-  <div><%= f.hidden_field :funded_id %></div>
-  <div><%= f.hidden_field :gift_id %></div>
-  <div><%= f.hidden_field :amount %></div>
-  <div><%= f.hidden_field :description %></div>
+      <div><%= f.hidden_field :funded_id %></div>
+      <div><%= f.hidden_field :gift_id %></div>
+      <div><%= f.hidden_field :amount %></div>
+      <div><%= f.hidden_field :description %></div>
 
 
-<%= f.submit "Claim this Gift", class: "btn btn-large btn-primary" %>
+
+    <%= f.submit "Claim this Gift", class: "btn btn-large btn-primary" %>
+    <% end %>
+  <% else %>
+  <%= link_to "Claim this Gift", gift %><br>
 <% end %>
 
+<%= link_to "Edit This Gift", edit_gift_path(gift.id) %><br>
 
 
 

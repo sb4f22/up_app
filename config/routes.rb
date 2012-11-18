@@ -23,6 +23,7 @@ UpApp::Application.routes.draw do
   resources :authentications, only: [:index, :create, :destroy]
 
 
+
   root to: 'static_pages#home'
 
   get "static_pages/home"
@@ -55,6 +56,7 @@ UpApp::Application.routes.draw do
   match '/wepaysignup', to: 'static_pages#wepaysignup'
   match '/wepay', to: 'static_pages#wepay'
   match '/thankyou', :to => 'relationships#thankyou'
+
 
  
 

@@ -19,8 +19,8 @@
                 </li>
               </ul>
             </li>
-          <li><%= link_to "Start a project", startintro_path %></li>
-          <li><%= link_to "Find a project", root_path %></li>
+          <li><%= link_to "Start a Campaign", startintro_path %></li>
+          <li><%= link_to "Find a Campaign", campaigns_path %></li>
 
           <% if signed_in? %>
             <% if current_user.admin? %>

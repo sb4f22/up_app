@@ -1,5 +1,10 @@
 class StaticPagesController < ApplicationController
   def home
+  @campaigns = Campaign.paginate(page: params[:page])
+  end
+
+  def portal
+    @user = current_user
   end
 
   def about

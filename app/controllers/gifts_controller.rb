@@ -18,7 +18,18 @@ class GiftsController < ApplicationController
   end
 
   def edit
-    @gift = Gift.find_by_id(params[:id])
+    @gift = Gift.find(params[:id])
+  end
+
+  def update
+    @gift = Gift.find(params[:id])
+    @gift.save
+    if @gift.save!
+      flash[:success] = "Gift updated"
+      redirect_to @gift
+    else
+      render 'edit'
+    end
   end
 
 
@@ -29,4 +40,28 @@ class GiftsController < ApplicationController
 
   def destroy
   end
+
+
+
+  private
+
+
+  
+  def signed_in_user
+      unless signed_in?
+        store_location
+        redirect_to signin_url, notice: "Please sign in."
+      end
+    end
+
+    def correct_user
+      @gift = Gift.find_by_id(params[:id])
+      @user = @gift.user
+      redirect_to(root_path) unless current_user?(@user)
+    end
+
+    def admin_user
+      redirect_to(root_path) unless current_user.admin?
+    end
+
 end

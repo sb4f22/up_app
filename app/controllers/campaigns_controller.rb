@@ -43,7 +43,8 @@ class CampaignsController < ApplicationController
   end
 
   def index
-  end
+    @campaigns = Campaign.paginate(page: params[:page])
+    end
 
   def support
     @campaign = Campaign.find_by_id(params[:id])

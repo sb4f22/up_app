@@ -1,8 +1,39 @@
-<h1><%= campaign.coop_name %></h1>
-<h2><%= campaign.coop_location %></h2>
-<h2> Funding Request: <%= campaign.request %> </h2>
-<%= image_tag campaign.image.url(:large) %>
+<h3><%= link_to campaign.coop_name, campaign %></h3>
+<%= image_tag campaign.image.url(:medium) %>
 <h3><%= campaign.short_description%></h3>
-<p><%= campaign.long_description %></p>
 <p><%= campaign.category %></p>
-<%= link_to "Give to this campaign", user_give_url(@user, :only_path => false) %>
+
+
+<section>
+<% @user = campaign.user %>
+<% @relationships = @user.relationships %>
+<% @total_given = @relationships.sum(:amount) %>
+<% @needed_for_goal = campaign.request - @total_given %>
+<% @fundining_percentage = (@total_given/campaign.request)*100 %>
+
+
+
+<div class="">
+  <a href="<%= funding_user_path(@user) %>">
+    <strong id="funding" class="stat">
+    
+    </strong>
+
+    Total Given: <%= @total_given %> <br>
+    Percentage Given: <%= @fundining_percentage %>% <br> 
+  <%= progress_bar(@fundining_percentage, :color => 'blue', :rounded => true) %>  <br>
+   Time Left: <br>
+  </a>
+  <a href="<%= funders_user_path(@user) %>">
+    <strong id="funders" class="stat">
+      <%= @user.funders.count %>
+    </strong>
+    funders
+  </a>
+</div>
+</section>
+
+
+
+<%= link_to campaign.coop_name, campaign %>
+
