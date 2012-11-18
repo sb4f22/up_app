@@ -25,7 +25,13 @@ class CampaignsController < ApplicationController
 
   def update
     @campaign = Campaign.find(params[:id])
-    if @campaign.update_attributes(params[:campaign])
+    if @campaign.update_attributes(params[:active])
+       @campaign.toggle!(:active)
+       @campaign.end_date = 30.days.from_now
+       @campaign.save!
+      flash[:success] = "Campaign Activated. Your Campaign Will End 30 Days from Now"
+      redirect_to @campaign
+    elsif @campaign.update_attributes(params[:campaign])
       flash[:success] = "Campaign updated"
       redirect_to @campaign
     else
@@ -48,6 +54,12 @@ class CampaignsController < ApplicationController
 
   def support
     @campaign = Campaign.find_by_id(params[:id])
+  end
+
+  def activate
+    @campaign = Campaign.find_by_id(params[:id])
+    @campaign.toggle!(:active)
+    redirect_to @campaign
   end
 
    private

@@ -1,6 +1,6 @@
 class Campaign < ActiveRecord::Base
   attr_accessible :coop_name, :coop_location, :short_description, 
-  :long_description, :video_link, :category, :request, :image
+  :long_description, :video_link, :category, :request, :image, :active, :end_date
   belongs_to :user
 
   has_many :previews

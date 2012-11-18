@@ -56,7 +56,7 @@ UpApp::Application.routes.draw do
   match '/wepaysignup', to: 'static_pages#wepaysignup'
   match '/wepay', to: 'static_pages#wepay'
   match '/thankyou', :to => 'relationships#thankyou'
-
+  match '/activate', :to => 'campaigns#activate'
 
  
 

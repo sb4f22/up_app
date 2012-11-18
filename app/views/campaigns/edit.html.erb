@@ -1,5 +1,5 @@
 <h1> Edit Your Campaign Below: </h1>
-      <%= form_for @campaign, :url => @campaign_path do |f| %> 
+  <%= form_for @campaign, :url => @campaign_path do |f| %> 
   <%= render 'shared/error_messages', object: f.object %>
 
   <div class="field">
@@ -33,6 +33,11 @@
 
   </div>
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
-<% end %>
+<% end %><br>
+
+ <%= form_for @campaign, active: "true", :url => @campaign_path do |f| %>
+ <%= f.hidden_field :active %>
+ <%= f.submit "Activate Your Campaign", class: "btn btn-large btn-primary" %>
+<% end %> 
 
 

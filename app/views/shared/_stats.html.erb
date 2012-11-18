@@ -16,7 +16,7 @@
     Total Given: <%= @total_given %> <br>
     Percentage Given: <%= @fundining_percentage %>% <br> 
   <%= progress_bar(@fundining_percentage, :color => 'blue', :rounded => true) %>  <br>
-   Time Left: <br>
+   Time Left: <%= distance_of_time_in_words_to_now(@campaign.end_date) %><br>
   </a>
   <a href="<%= funders_user_path(@user) %>">
     <strong id="funders" class="stat">
