@@ -5,7 +5,14 @@
     
 
 
-		<%= link_to "Edit Your Campaign", edit_campaign_path(@campaign) %><br>
+		<%= link_to "Edit Your Campaign", edit_campaign_path(@campaign) %><br><br>
+
+
+
+    <%= form_for @campaign, active: "true", :url => @campaign_path do |f| %>
+      <%= f.hidden_field :active %>
+      <%= f.submit "Activate Your Campaign", class: "btn btn-large btn-primary" %>
+    <% end %> 
 
 
 
@@ -13,12 +20,13 @@
 	
 
       	 <section>
-	        <h1><%= @campaign.coop_name %></h1>
+	     <h1><%= @campaign.coop_name %></h1>
 			<h2><%= @campaign.coop_location %></h2>
 
 			<% if @campaign.video_link.present? %>
-			<iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/<%= @campaign.video_link %>" frameborder="0">
-			</iframe>	
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @campaign.video_id %>" frameborder="0" allowfullscreen></iframe>
+
 			<% else %>	
 			<%= image_tag @campaign.image.url(:large) %>
 			<% end %>
@@ -50,6 +58,7 @@
   				</ol>
     			</div>
   		</div>
+
 
 
 
